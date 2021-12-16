@@ -11,6 +11,12 @@ const meta: Meta = {
         type: 'text',
       },
     },
+    type: {
+      control: {
+        type: 'select',
+        options: ['submit', 'link'],
+      },
+    },
     link: {
       control: {
         type: 'text',
@@ -39,15 +45,14 @@ const meta: Meta = {
         type: 'boolean',
       },
     },
-    icon: {
+    disabled: {
       control: {
-        type: 'text',
+        type: 'boolean',
       },
     },
-    iconPosition: {
+    loading: {
       control: {
-        type: 'select',
-        options: ['left', 'right'],
+        type: 'boolean',
       },
     },
   },
@@ -67,5 +72,8 @@ Default.args = {
   intent: 'primary',
   size: 'small',
   weight: 'normal',
-  fullWidth: true,
+  fullWidth: false,
+  disabled: false,
+  loading: false,
+  type: 'link',
 };

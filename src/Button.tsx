@@ -58,12 +58,10 @@ export const Button = ({
           ${intent?.toLowerCase() === 'success' && intentSuccess}
           ${intent?.toLowerCase() === 'warning' && intentWarning}
           ${intent?.toLowerCase() === 'danger' && intentDanger}
-          ${loading === true && loadingStyles}
           ${disabled === true && disabledStyles}
           ${size?.toLowerCase() === 'small' && sizeSmall}
           ${size?.toLowerCase() === 'medium' && sizeMedium}
           ${size?.toLowerCase() === 'large' && sizeLarge}
-          ${fullWidth === true && 'w-full'}
           ${weight?.toLowerCase() === 'light' && 'font-light'}
           ${weight?.toLowerCase() === 'normal' && 'font-normal'}
           ${weight?.toLowerCase() === 'medium' && 'font-medium'}
